@@ -1,0 +1,12 @@
+.message__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hello {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+}

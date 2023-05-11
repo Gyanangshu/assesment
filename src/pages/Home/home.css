@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body{
+    background: url("../../Colored\ Patterns.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+   
+}
+
+.home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 2.5rem;
+}
+
+.head__text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.sub__text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button {
+  width: 9em;
+  position: relative;
+  height: 3.2em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.3em;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+ 
+  transition: 0.5s;
+}
+
+button:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}
